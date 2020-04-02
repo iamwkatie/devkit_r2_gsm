@@ -58,3 +58,8 @@ extern int __io_putchar(int ch) __attribute__((weak));
 - Also note that an IRQ handler is required for USART1; see `./Core/Src/stm32f1xx_it.c`.
 
 - Note the **differences** under `./Core/{*}/usart.{*}` 
+
+- Bandwidth optimizer imports added to  `./Core/Src/main.c` 
+```c 
+#include "xcltr_bw_genie.h"; 
+``` 
